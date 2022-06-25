@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  background-color: #b6d4ee;
+}
+
+li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+}
+
+.courses-list {
+  margin-left: 10px;
+}
+
+.background-img {
+  background-image: url('../images/background-img.jpeg');
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: -100px;
+}
+
+.content {
+  padding-left: 5px;
+}
+
+.profile-img {
+  padding-left: 5px;
+}
+
+.profile {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  background-color: rgb(211, 207, 207);
+}
+
+.left-column {
+  flex: 60%;
+  margin: 10px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.right-column {
+  margin: 20px;
+}
