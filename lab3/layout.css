@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-size: 16px;
+}
+
+.top-header {
+  color: rgb(219, 220, 222);
+  height: 60px;
+  background-color: rgb(51, 81, 119);
+}
+
+.top-header-form {
+  top: 0px;
+  right: 0px;
+  font-size: 12px;
+  position: absolute;
+}
+
+.parent-box {
+  padding: 15px;
+  display: grid;
+  overflow: hidden;
+  row-gap: 20px;
+  grid-template-rows: 1fr 1fr;
+  border: 2px dashed black;
+}
+
+.boxLayout {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 130px 130px 130px;
+}
+
+.box {
+  margin: 12px;
+  height: 90px;
+  background-color: black;
+}
+
+.menu-box {
+  margin: 12px;
+  display: grid;
+  height: 50px;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  background-color: red;
+  justify-content: center;
+  grid-template-columns: 170px 170px 170px 170px 170px;
+}
+
+.menu-item {
+  padding: 10px;
+  display: inline;
+  margin-right: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.text-container {
+  width: 500px;
+  padding: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+  background-color: lightgray;
+}
+
+.header-text {
+  background-color: rgb(169, 206, 96);
+}
+
+#column1,
+#column2 {
+  float: right;
+  width: 100px;
+  margin-left: 10px;
+  background-color: rgb(173, 216, 230);
+}
+
+.text-block {
+  margin: 20px;
+  max-width: 30%;
+  height: 400px;
+  position: relative;
+  background-color: lightgreen;
+}
+
+#a, #b {
+  float: left;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font: 30pt bold Helvetica, Arial, sans-serif;
+}
+
+#a {
+  background-color: lightblue;
+}
+
+#b {
+  top: 50px;
+  right: 10px;
+  position: absolute;
+  background-color: pink;
+}
+
+#c {
+  float: left;
+  width: 500px;
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: lightgray;
+}
