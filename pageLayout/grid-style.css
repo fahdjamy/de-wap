@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 30px;
+  padding: 15px;
+  font-size: 17px;
+  text-align: center;
+  background-color: rgb(165, 165, 232);
+}
+
+.menu-box {
+  margin: 0;
+  height: 20px;
+  padding: 25px;
+  color: #fff;
+  font-size: 17px;
+  background-color: rgb(10, 46, 10);
+}
+
+.menu-item {
+  padding: 10px;
+  display: inline;
+  border: 1px solid black;
+}
+
+.footer {
+  margin: 0;
+  height: 20px;
+  padding: 25px;
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  background-color: rgb(10, 46, 10);
+}
+
+.columns {
+  display: flex;
+}
+
+.column-one {
+  width: 20%;
+  padding: 10px;
+  height: 300px;
+  background-color: rgb(161, 156, 156);
+}
+
+.column-two {
+  width: 60%;
+  padding: 10px;
+  height: 300px;
+  background-color: rgb(183, 176, 176);
+}
+
+.column-three {
+  width: 20%;
+  height: 300px;
+  padding: 10px;
+  background-color: rgb(203, 197, 197);
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column-one {
+    order: 1;
+    width: 28.9vh;
+    height: 300px;
+  }
+  
+  .column-two {
+    order: 3;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .column-three {
+    order: 2;
+    width: 29vh;
+    height: 300px;
+  }
+
+  .footer {
+    margin-top: 0px;
+  }
+}
