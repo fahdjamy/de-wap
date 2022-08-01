@@ -163,3 +163,7 @@ label.error {
 .taskCompleted {
   text-decoration: line-through;
 }
+
+.required {
+  color: red;
+}
