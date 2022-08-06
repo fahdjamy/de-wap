@@ -25,7 +25,6 @@ function onStartBtnClicked() {
   let circleWidth = document.getElementById("circleWidth").value;
   const growthAmount = document.getElementById("growthAmt").value;
   const growthRate = document.getElementById("growthRate").value;
-  growthAmnt = parseInt(growthAmount);
   
   const msgDisplay = document.getElementById("msgDisplay");
   if (!circleWidth || !growthRate || !growthAmount || !noOfcircles) {
@@ -36,6 +35,9 @@ function onStartBtnClicked() {
     msgDisplay.append(spanMsg);
     return;
   }
+  curSize = parseInt(circleWidth);
+  growthAmnt = parseInt(growthAmount);
+  clearInterval(resizeInterval);
   msgDisplay.style.display = "none";
   circleWidth = parseInt(circleWidth);
   
