@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="shortcut icon" href="#">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link type="text/css" rel="stylesheet" href="circle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <h1 style="margin-left: 5px">Circle Exercise</h1>
+  <h5 style="margin-left: 5px; display: none;" id="msgDisplay"></h5>
+
+  <form>
+    <div>
+      <label>Width</label>
+      <input type="number" name="circleWidth" id="circleWidth" placeholder="Circle Width" />
+    </div>
+    <div>
+      <label>Growth Amount</label>
+      <input type="number" name="growthAmount" id="growthAmt" placeholder="Growth Amount" />
+    </div>
+    <div>
+      <label>Growth Rate</label>
+      <input type="number" name="growthRate" id="growthRate" placeholder="Growth Rate" />
+    </div>
+    <div>
+      <label>Number Of Circles</label>
+      <input type="number" name="numberOfCircles" id="noOfcircles" placeholder="Number Of Circles" />
+    </div>
+    <nav>
+      <a href="#" id="start" onclick="onStartBtnClicked()">Start</a>
+    </nav>
+  </form>
+
+  <div class="circle-container" id="circleContainer">
+    <div class="circle" id="circle" onclick="stopResizing()"></div>
+  </div>
+
+  <div class="footer">
+    <div>
+      <p><strong>&copy; Fahad Asiimwe</strong> (MIU)</p>
+    </div>
+  </div>
+
+  <script src="circle.js"></script>
+</body>
+
+</html>
