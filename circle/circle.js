@@ -1,4 +1,4 @@
-let resizeInterval = setInterval(changeCircleSize, 2500);
+let resizeInterval = setInterval(changeCircleSize, 250);
 
 let curSize = 0;
 let growthAmnt = 10;
@@ -22,7 +22,7 @@ function stopResizing() {
 
 function onStartBtnClicked() {
   const noOfcircles = document.getElementById("noOfcircles").value;
-  const circleWidth = document.getElementById("circleWidth").value;
+  let circleWidth = document.getElementById("circleWidth").value;
   const growthAmount = document.getElementById("growthAmt").value;
   const growthRate = document.getElementById("growthRate").value;
   growthAmnt = parseInt(growthAmount);
@@ -37,9 +37,10 @@ function onStartBtnClicked() {
     return;
   }
   msgDisplay.style.display = "none";
+  circleWidth = parseInt(circleWidth);
   
   const circles = [];
-  for (let i = 0; i < noOfcircles; i++) {
+  for (let i = 0; i < parseInt(noOfcircles); i++) {
     let circle = document.createElement("div");
     circle.classList.add("circle");
     circle.style.display = "block";
